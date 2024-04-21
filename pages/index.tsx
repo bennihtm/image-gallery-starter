@@ -61,7 +61,7 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
               Pictures I think
             </h1>
             <p className="max-w-[40ch] text-white/75 sm:max-w-[32ch]">
-              All of these photos are taken by me and completely free to use under the <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noreferrer" className="font-semibold hover:text-white">CC0</a>
+              All of these photos are taken by me and completely free to use under the <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" className="font-semibold hover:text-white" rel="noreferrer">CC0</a>
             </p>
           </div>
           {images.map(({ id, public_id, format, blurDataUrl }) => (
@@ -91,36 +91,6 @@ const Home: NextPage = ({ images }: { images: ImageProps[] }) => {
           ))}
         </div>
       </main>
-      <footer className="p-6 text-center text-white/80 sm:p-12">
-        Thank you to{" "}
-        <a
-          href="https://edelsonphotography.com/"
-          target="_blank"
-          className="font-semibold hover:text-white"
-          rel="noreferrer"
-        >
-          Josh Edelson
-        </a>
-        ,{" "}
-        <a
-          href="https://www.newrevmedia.com/"
-          target="_blank"
-          className="font-semibold hover:text-white"
-          rel="noreferrer"
-        >
-          Jenny Morgan
-        </a>
-        , and{" "}
-        <a
-          href="https://www.garysextonphotography.com/"
-          target="_blank"
-          className="font-semibold hover:text-white"
-          rel="noreferrer"
-        >
-          Gary Sexton
-        </a>{" "}
-        for the pictures.
-      </footer>
     </>
   );
 };
